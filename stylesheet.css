@@ -12,6 +12,8 @@ body{
     margin: 50px;
     display: flex;
 
+    z-index: 5;
+
 }
 
 .slot{
@@ -24,4 +26,19 @@ body{
     text-align: center;
     font-size: 100px;
     line-height: 250px;
+    overflow: hidden;
+    z-index: 1;
+}
+.slot > .value{
+    animation: slotspin infinite 0.5s;
+    z-index: 3;
+}
+
+@keyframes slotspin{
+    0%{
+        transform: translateY(-250px);
+    }
+    100%{
+        transform: translateY(250px);
+    }
 }
