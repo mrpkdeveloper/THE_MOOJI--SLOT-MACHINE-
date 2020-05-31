@@ -1,3 +1,7 @@
+:root{
+ /* css variable */
+    --speed:5; 
+}
 body{
     margin : 0px;
     padding : 0px
@@ -16,6 +20,13 @@ body{
 
 }
 
+#idspeed{
+    margin: 20px;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    font-size: large;
+}
 .slot{
     align-items: center;
     margin: auto;
@@ -25,13 +36,16 @@ body{
     border: 1px solid blue;
     text-align: center;
     font-size: 100px;
-    line-height: 250px;
+    line-height: 240px;
     overflow: hidden;
     z-index: 1;
 }
 .slot > .value{
-    animation: slotspin infinite 0.5s;
     z-index: 3;
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    animation-duration: calc(1s / var(--speed));
+   
 }
 
 @keyframes slotspin{
