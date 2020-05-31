@@ -10,16 +10,24 @@ let values = [
 function randomvalues() {
     return values[Math.floor(Math.random() * 8)]
 }
+let animateid;
 
-setInterval(() => {
-    value1.innerText = randomvalues()
-    value2.innerText = randomvalues()
-    value3.innerText = randomvalues()
+function updateanimation(newspeed) {
+    if (animateid) clearInterval(animateid)
 
-}, 200)
+    animateid = setInterval(() => {
+        value1.innerText = randomvalues()
+        value2.innerText = randomvalues()
+        value3.innerText = randomvalues()
+
+    }, 1000 / newspeed)
+}
+
+
+
 
 idspeed.onchange = function (ev) {
-    console.log("value changes to " + ev.target.value)
     // document.documentElement => this si root of css
     document.documentElement.style.setProperty('--speed', ev.target.value)
+    updateanimation(ev.target.value)
 }
