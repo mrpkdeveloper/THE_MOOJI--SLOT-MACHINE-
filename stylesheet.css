@@ -1,6 +1,6 @@
 :root{
  /* css variable */
-    --speed:5; 
+    --speed:0; 
 }
 body{
     margin : 0px;
@@ -27,9 +27,13 @@ body{
     text-align: center;
     font-size: large;
 }
-#bttn{
+.bttndiv{
+    display: flex;
+}
+.bttn{
     font-size: 30px;
     border-radius: 5px;
+    margin-left: 80px;
 }
 .slot{
     align-items: center;
