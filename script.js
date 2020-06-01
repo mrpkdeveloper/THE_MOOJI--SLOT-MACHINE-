@@ -4,9 +4,11 @@ let value3 = document.getElementById('value-3')
 // let idspeed = document.getElementById('idspeed')
 let Stop_bttn = document.getElementById('stop-bttn')
 let Start_bttn = document.getElementById('start-bttn')
+let result_bttn = document.getElementById('result')
 
 let values = [
-    '😁', '😃', '😎', '😇', '😅', '😠', '😨', '😕', '😁', '😁', '😁', '😁', '😁', '😁'
+    '😁', '😃', '😎', '😇', '😅', '😠', '😨',
+    '😕', '😁', '😁', '😁', '😁', '😁', '😁'
 ]
 
 function randomvalues() {
@@ -35,16 +37,15 @@ function updateanimation(newspeed) {
 Start_bttn.onclick = function () {
     document.documentElement.style.setProperty('--speed', 5)
     updateanimation(5)
+    result_bttn.innerText = "Result"
 }
 
 Stop_bttn.onclick = function () {
     document.documentElement.style.setProperty('--speed', 0)
     clearInterval(animateid) //face change stop
     if (value1.innerText == value2.innerText && value1.innerText == value3.innerText) {
-        console.log("u win")
-        window.alert("u win")
+        result_bttn.innerText = "U WIN"
     } else {
-        console.log("u loose")
-        window.alert("u loose")
+        result_bttn.innerText = "U LOST"
     }
 } 
