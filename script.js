@@ -9,13 +9,13 @@ let result_bttn = document.getElementById('result')
 
 let values = [
     '😁', '😃', '😎', '😇', '😅', '😠', '😨',
-    '😕', '😁', '😁', '😁', '😁', '😁', '😁',
-    '😕', '😁', '😁', '😁', '😁', '😁', '😁',
-    '😕', '😁', '😁', '😁', '😁', '😁', '😁',
+    '😎', '😁', '😁', '😇', '😁', '😁', '😁',
+    '😎', '😁', '😁', '😇', '😁', '😁', '😁',
+    '😁', '😁', '😁', '😇', '😁', '😁', '😁',
 ]
 
 function randomvalues() {
-    return values[Math.floor(Math.random() * 14)]
+    return values[Math.floor(Math.random() * 28)]
 }
 
 let animateid;
@@ -57,9 +57,21 @@ function stop() {
 
 Spin_bttn.onclick = function () {
     result_bttn.innerText = "Result"
-    document.documentElement.style.setProperty('--speed', 5)
+    document.documentElement.style.setProperty('--speed', 10)
     updateanimation(5)
     setTimeout(() => {
+        document.documentElement.style.setProperty('--speed', 7)
+    }, 500)
+    setTimeout(() => {
+        document.documentElement.style.setProperty('--speed', 4)
+    }, 1000)
+    setTimeout(() => {
+        document.documentElement.style.setProperty('--speed', 2.5)
+    }, 1500)
+    setTimeout(() => {
+        document.documentElement.style.setProperty('--speed', 1.2)
+    }, 2500)
+    setTimeout(() => {
         stop()
-    }, 1200)
+    }, 4500)
 }
