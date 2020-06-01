@@ -13,8 +13,9 @@ body{
     border: 3px dashed brown;
     height: 300px;
     width: 900px;
-    margin: 50px;
+    margin: auto;
     display: flex;
+    margin-top: 5%;
 
     z-index: 5;
 
@@ -29,11 +30,14 @@ body{
 }
 .bttndiv{
     display: flex;
+    margin-top: 30px;
+    padding-left: 40%;
 }
 .bttn{
     font-size: 30px;
     border-radius: 5px;
-    margin-left: 80px;
+    font-weight: bold;
+    margin: 5px;
 }
 .slot{
     align-items: center;
