@@ -2,14 +2,16 @@ let value1 = document.getElementById('value-1')
 let value2 = document.getElementById('value-2')
 let value3 = document.getElementById('value-3')
 let idspeed = document.getElementById('idspeed')
+let Start_bttn = document.getElementById('bttn')
 
 let values = [
-    '😁', '😃', '😎', '😇', '😅', '😠', '😨', '😕'
+    '😁', '😃', '😎', '😇', '😅', '😠', '😨', '😕', '😁', '😁', '😁', '😁', '😁', '😁'
 ]
 
 function randomvalues() {
-    return values[Math.floor(Math.random() * 8)]
+    return values[Math.floor(Math.random() * 14)]
 }
+
 let animateid;
 
 function updateanimation(newspeed) {
@@ -23,11 +25,14 @@ function updateanimation(newspeed) {
     }, 1000 / newspeed)
 }
 
-
-
-
 idspeed.onchange = function (ev) {
-    // document.documentElement => this si root of css
+    // document.documentElement => this is root of css
     document.documentElement.style.setProperty('--speed', ev.target.value)
     updateanimation(ev.target.value)
+}
+
+Start_bttn.onclick = function () {
+    console.log("clicked")
+    clearInterval(animateid) //face change stop
+    document.documentElement.style.setProperty('--speed', 0)
 }

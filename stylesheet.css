@@ -27,6 +27,10 @@ body{
     text-align: center;
     font-size: large;
 }
+#bttn{
+    font-size: 30px;
+    border-radius: 5px;
+}
 .slot{
     align-items: center;
     margin: auto;
