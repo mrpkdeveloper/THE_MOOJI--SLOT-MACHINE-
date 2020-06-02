@@ -11,12 +11,12 @@
    .machine{
        background-color: peru;
        border: 3px dashed brown;
-       height: 530px;
-       width: 90%;
+       height: 500px;
+       width: 60%;
        margin: auto;
        display: flex;
        flex-direction: column;
-       margin-top: 5%;
+       margin-top: 12%;
    
        z-index: 5;
    
@@ -42,8 +42,8 @@
    }
    .slot{
        align-items: center;
-       width:250px;
-       height: 250px;
+       width:90%;
+       height: 30%;
        background-color: beige;
        border: 1px solid blue;
        text-align: center;
