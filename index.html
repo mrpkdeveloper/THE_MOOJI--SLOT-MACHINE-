@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <header></header>
     <div id="machine" class="machine">
         <div id="slot-1" class="slot">
             <div class="value" id="value-1">😃</div>
@@ -29,8 +30,19 @@
         <!-- <button class="bttn" id="start-bttn">Start</button> -->
         <!-- <button class="bttn" id="stop-bttn">Stop</button> -->
         <!-- <button class="bttn" id="spin-bttn">Spin</button> -->
-        <button type="button" id="spin-bttn" class="bttn btn btn-secondary btn-lg">SPIN</button>
-        <button class="bttn " id="result">Result</button>
+        <audio id="myAudio">
+            <source src="world.ogg" type="audio/ogg">
+            <source src="world.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="myAudio2">
+            <source src="coin.ogg" type="audio/ogg">
+            <source src="coin.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <button onclick="playAudio()" type="button" id="spin-bttn" class="bttn btn btn-warning btn-lg">SPIN</button>
+        <!-- <button class="bttn btn-primary btn-lg" id="result">Result</button> -->
     </div>
 
 </body>

@@ -18,6 +18,13 @@ let values = [
     '💩', '💩', '💩', '💩', '💩', '💩', '💩',
     '💩', '💩', '💩', '💩', '💩', '💩', '💩',
     '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
+    '💩', '💩', '💩', '💩', '💩', '💩', '💩',
     '🚽', '🚽', '🚽', '🚽', '🚽', '🚽', '🚽',
     '🚽', '🚽', '🚽', '🚽', '🚽', '🚽', '🚽',
     '🚽', '🚽', '🚽', '🚽', '🚽', '🚽', '🚽',
@@ -64,9 +71,34 @@ function stop() {
     }
 }
 
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+    x.play();
+}
+
+function pauseAudio() {
+    x.pause();
+}
+
+var y = document.getElementById("myAudio2");
+
+function playAudio2() {
+    y.play();
+}
+
+function pauseAudio() {
+    y.pause();
+}
+
+
+
+
+Spin_bttn.onmouseover = function () { playAudio2() };
 
 Spin_bttn.onclick = function () {
-    result_bttn.innerText = "Result"
+    playAudio()
+    // result_bttn.innerText = "Result"
     document.documentElement.style.setProperty('--speed', 10)
     updateanimation(5)
     setTimeout(() => {
@@ -84,4 +116,10 @@ Spin_bttn.onclick = function () {
     setTimeout(() => {
         stop()
     }, 4500)
+    // pauseAudio()
 }
+
+
+
+
+

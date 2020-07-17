@@ -2,20 +2,35 @@
  /* css variable */
     --speed:0; 
 }
+
+
+/* header::before {
+    content: "";
+    background: url("slot-background.png") no-repeat center center/cover;
+    position: absolute;;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+
+} */
 body{
     margin : 0px;
-    padding : 0px
+    padding : 0px;
+    background-image:url("slot-background.png");
+    background-position: center;
+    opacity: 0.75;
 
 }
 
 .machine{
-    background-color: peru;
-    border: 3px dashed brown;
+    /* background-color: peru; */
+    /* border: 3px dashed brown; */
     height: 300px;
-    width: 900px;
+    width: 740px;
     margin: auto;
     display: flex;
-    margin-top: 5%;
+    margin-top: 7%;
 
     z-index: 5;
 
@@ -30,22 +45,27 @@ body{
 }
 .bttndiv{
     display: flex;
-    margin-top: 30px;
+    margin-top: 10px;
     justify-content: center;
 }
 .bttn{
+    border: 2px solid black;
     font-size: 30px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin: 5px;
+    border-radius: 30px;
+    font-weight: bold; 
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: -15px;
+    background-color:#ffffff;
 }
 .slot{
-    align-items: center;
+    /* align-items: center; */
     margin: auto;
-    width:250px;
+    width:200px;
     height: 250px;
-    background-color: beige;
-    border: 1px solid blue;
+    background-color:#ffffff;
+    border: 1px solid;
+    border-radius: 60px;
     text-align: center;
     font-size: 100px;
     line-height: 240px;
@@ -68,3 +88,5 @@ body{
         transform: translateY(250px);
     }
 }
+
+
