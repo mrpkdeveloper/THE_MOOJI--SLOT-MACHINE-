@@ -2,13 +2,14 @@
    body{
        margin : 0px;
        padding : 0px;
+       background-image:url("bg.jpg");
        background-position: vertical;
    
    }
    
    .machine{
-       background-color: peru;
-       border: 3px dashed brown;
+       /* background-color: peru;
+       border: 3px dashed brown; */
        height: 500px;
        width: 60%;
        margin: auto;
