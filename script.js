@@ -81,7 +81,7 @@ function pauseAudio() {
     x.pause();
 }
 
-var y = document.getElementById("myAudio2");
+// var y = document.getElementById("myAudio2");
 
 function playAudio2() {
     y.play();
@@ -94,7 +94,7 @@ function pauseAudio() {
 
 
 
-Spin_bttn.onmouseover = function () { playAudio2() };
+// Spin_bttn.onmouseover = function () { playAudio2() };
 
 Spin_bttn.onclick = function () {
     playAudio()

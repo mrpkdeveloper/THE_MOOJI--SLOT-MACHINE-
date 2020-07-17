@@ -1,10 +1,8 @@
-:root{
-    /* css variable */
-       --speed:0; 
-   }
+
    body{
        margin : 0px;
-       padding : 0px
+       padding : 0px;
+       background-position: vertical;
    
    }
    
@@ -22,13 +20,6 @@
    
    }
    
-   #idspeed{
-       margin: 20px;
-       height: 30px;
-       width: 50px;
-       text-align: center;
-       font-size: large;
-   }
    .bttndiv{
        display: flex;
        margin-top: 30px;
@@ -44,8 +35,9 @@
        align-items: center;
        width:90%;
        height: 30%;
-       background-color: beige;
-       border: 1px solid blue;
+       background-color:#ffffff;
+       border: 1px solid;
+       border-radius: 60px;
        text-align: center;
        font-size: 100px;
        line-height: 150px;
