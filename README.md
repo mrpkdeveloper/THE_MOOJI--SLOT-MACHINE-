@@ -3,7 +3,7 @@ Fun slot machine to tell your mood 😎 . Give it a try 😃.
 
 ### Preview
 
-<img width="894" alt="MOJI" src="https://user-images.githubusercontent.com/46247882/83490564-deb6e300-a4cd-11ea-94a3-2fd4416bb183.PNG">
+<img width="904" alt="Capture" src="https://user-images.githubusercontent.com/46247882/88319995-946a1980-cd3a-11ea-952d-0be86ec1f05d.PNG">
 
 ### Play and Enjoy..😃😃😃   
 ### [----PLAY NOW----](https://mrpkdeveloper.github.io/THE_MOOJI--SLOT-MACHINE-/) 
